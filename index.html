@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Random Password Generator</title>
   </head>
@@ -18,22 +15,22 @@
         <div class="box-inside">
           <h1 class="box-title">Generate a <span class="main-color">random password</span></h1>
           <p class="box-undertitle">Never use an insecure password again.</p>
-          <a href="#"><button class="btn btn-main">Generate passwords</button></a>
+          <a href="#" onclick="generatePassword()"><button class="btn btn-main">Generate passwords</button></a>
           <div class="box-underline"></div>
           <div class="box-generated-buttons">
-            <a href=""
-              ><button class="btn btn-gen"
-                >asdasdasdaaaa<span class="ico"><i class="fa-solid fa-copy ico ico2"></i></span></button
-            ></a>
-            <a href=""
-              ><button class="btn btn-gen"
-                >asdasdasdaaaa<span class="ico"><i class="fa-solid fa-copy ico ico2"></i></span></button
-            ></a>
+            <div class="pass-box">
+              <p id="pass-el-one"></p>
+              <button id="btn-copy" class="pass" onclick="copyToClipboard()"><i class="fa-solid fa-copy ico"></i></button>
+            </div>
+            <div class="pass-box">
+              <p id="pass-el-two"></p>
+              <button id="btn-copy" class="pass" onclick="copyToClipboard()"><i class="fa-solid fa-copy ico"></i></button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/b802274580.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </body>
 </html>

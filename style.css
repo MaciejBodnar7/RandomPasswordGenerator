@@ -26,15 +26,17 @@ strong {
 
   /* shadow */
   -webkit-box-shadow: 1px 0px 24px 0px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 1px 0px 24px 0px rgba(66, 68, 90, 1);
   box-shadow: 1px 0px 24px 0px rgba(66, 68, 90, 1);
 }
 .box-inside {
   margin: 0 auto;
   width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 a {
   text-decoration: none;
+  width: fit-content;
 }
 
 /* font */
@@ -59,6 +61,12 @@ a {
   color: #10b981;
   font-weight: 600;
 }
+#pass-el-one,
+#pass-el-two {
+  color: #10b981;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
 /* styling */
 .box-title {
   width: 21rem;
@@ -75,20 +83,18 @@ a {
 }
 .box-generated-buttons {
   margin-top: 2rem;
-}
-.box-generated-buttons {
   display: flex;
   justify-content: space-between;
 }
-.ico {
-  font-size: 1.125rem;
-  margin-left: 0.5rem;
-  transition: transform 0.2s, scale 0.2s;
-  width: 1.5rem;
-}
-.ico:hover {
-  transform: translateY(-0.1em);
-  scale: 110%;
+.pass-box {
+  width: 49%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #273549;
+  border-radius: 5px;
+  padding: 0.1em 0.3em 0.1em 0.7em;
 }
 /* btn */
 .btn {
@@ -105,11 +111,23 @@ a {
 }
 .btn-main:hover {
   -webkit-box-shadow: 1px 0px 24px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 1px 0px 24px 0px rgba(0, 0, 0, 1);
   box-shadow: 1px 0px 24px 0px rgba(0, 0, 0, 1);
   transform: translateY(-0.25em);
 }
 .btn-gen {
   background: #273549;
   width: 190px;
+}
+.pass {
+  border: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: none;
+  color: #10b981;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.pass:hover {
+  transform: translateY(-0.15em);
 }
