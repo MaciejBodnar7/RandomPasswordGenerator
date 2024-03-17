@@ -9,6 +9,10 @@ body {
 strong {
   font-weight: 800;
 }
+input[type='checkbox']:checked {
+  accent-color: #10b981;
+  color: #10b981;
+}
 .container {
   margin: 0 auto;
   width: 960px;
@@ -67,6 +71,9 @@ a {
   font-weight: 500;
   font-size: 0.9rem;
 }
+.checkbox-gen {
+  font-size: 1rem;
+}
 /* styling */
 .box-title {
   width: 21rem;
@@ -95,6 +102,37 @@ a {
   background: #273549;
   border-radius: 5px;
   padding: 0.1em 0.3em 0.1em 0.7em;
+}
+.generate-and-check {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.gen-but {
+  width: 44%;
+}
+.checkbox-gen {
+  width: 53%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chgeckbox-one,
+.chgeckbox-two {
+  display: flex;
+  font: inherit;
+  font-size: 0.8rem;
+  color: #10b981;
+  font-weight: 700;
+  background: #2f3e53;
+  padding: 0.6rem 0.7rem;
+  border-radius: 5px;
+  align-items: center;
+}
+#symbols {
+  border: 0;
+  background-color: #10b981;
 }
 /* btn */
 .btn {

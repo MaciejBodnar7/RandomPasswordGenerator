@@ -15,7 +15,19 @@
         <div class="box-inside">
           <h1 class="box-title">Generate a <span class="main-color">random password</span></h1>
           <p class="box-undertitle">Never use an insecure password again.</p>
-          <a href="#" onclick="generatePassword()"><button class="btn btn-main">Generate passwords</button></a>
+          <div class="generate-and-check">
+            <a class="gen-but" href="#" onclick="checkBoxRender()"><button class="btn btn-main">Generate passwords</button></a>
+            <div class="checkbox-gen">
+              <div class="chgeckbox-one">
+                <label for="numbers">numbers</label>
+                <input id="numbers" type="checkbox" />
+              </div>
+              <div class="chgeckbox-two">
+                <label for="symbols">symbols</label>
+                <input id="symbols" type="checkbox" />
+              </div>
+            </div>
+          </div>
           <div class="box-underline"></div>
           <div class="box-generated-buttons">
             <div class="pass-box">
@@ -31,6 +43,6 @@
       </div>
     </div>
     <script src="https://kit.fontawesome.com/b802274580.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="main2.js"></script>
   </body>
 </html>
