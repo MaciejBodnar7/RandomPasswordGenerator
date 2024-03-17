@@ -119,7 +119,7 @@ function copyToClipboard() {
   navigator.clipboard.writeText(content);
 }
 
-function copyToClipboard2() {
+function copyToClipboardTwo() {
   const content = passElTwo.textContent;
   navigator.clipboard.writeText(content);
 }
