@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+strong {
+  font-weight: 800;
+}
+.container {
+  margin: 0 auto;
+  width: 960px;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background: #1f2937;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  border: 6px solid white;
+
+  /* shadow */
+  -webkit-box-shadow: 1px 0px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 1px 0px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 1px 0px 24px 0px rgba(66, 68, 90, 1);
+}
+.box-inside {
+  margin: 0 auto;
+  width: 400px;
+}
+a {
+  text-decoration: none;
+}
+
+/* font */
+.box-title {
+  font-size: 2.125rem;
+  color: white;
+  font-weight: 800;
+}
+.box-undertitle {
+  color: white;
+  font-size: 1.125rem;
+}
+.main-color {
+  color: #10b981;
+}
+.btn-main {
+  background: #10b981;
+  color: white;
+  font-weight: 600;
+}
+.btn-gen {
+  color: #10b981;
+  font-weight: 600;
+}
+/* styling */
+.box-title {
+  width: 21rem;
+  margin: 5rem 0 0 0;
+}
+.box-undertitle {
+  margin: 1rem 0 4rem 0;
+}
+.box-underline {
+  background-color: #2f3e53;
+  width: 100%;
+  height: 1px;
+  margin: 2rem 0 0 0;
+}
+.box-generated-buttons {
+  margin-top: 2rem;
+}
+.box-generated-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.ico {
+  font-size: 1.125rem;
+  margin-left: 0.5rem;
+  transition: transform 0.2s, scale 0.2s;
+  width: 1.5rem;
+}
+.ico:hover {
+  transform: translateY(-0.1em);
+  scale: 110%;
+}
+/* btn */
+.btn {
+  padding: 0.8em 1.125em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-main {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.btn-main:hover {
+  -webkit-box-shadow: 1px 0px 24px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 1px 0px 24px 0px rgba(0, 0, 0, 1);
+  box-shadow: 1px 0px 24px 0px rgba(0, 0, 0, 1);
+  transform: translateY(-0.25em);
+}
+.btn-gen {
+  background: #273549;
+  width: 190px;
+}
