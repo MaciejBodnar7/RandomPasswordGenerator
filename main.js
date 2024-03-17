@@ -115,7 +115,11 @@ function generatePassword() {
 }
 
 function copyToClipboard() {
-  console.log(passElOne.textContent);
   const content = passElOne.textContent;
+  navigator.clipboard.writeText(content);
+}
+
+function copyToClipboard2() {
+  const content = passElTwo.textContent;
   navigator.clipboard.writeText(content);
 }
